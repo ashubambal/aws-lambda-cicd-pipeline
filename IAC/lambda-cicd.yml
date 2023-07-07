@@ -7,6 +7,9 @@ Parameters:
   GitHubBranch:
     Type: String
     Description: Branch name of the GitHub repository
+  GitHubToken:
+    Type: String
+    Description: GitHub personal access token
 
 Resources:
   CodePipeline:

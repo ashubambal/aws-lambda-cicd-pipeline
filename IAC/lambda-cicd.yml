@@ -154,9 +154,10 @@ Resources:
       FunctionName: MyLambdaFunction
       Runtime: python3.8
       Handler: index.handler
+      Role: arn:aws:iam::655652197014:role/service-role/test-function-role-ddw9v2s0  # Replace with the actual IAM role ARN
       Code:
         S3Bucket: !Ref LambdaCodeBucket
-        S3Key: lambda-function.zip
+        S3Key: lambda_function.zip
 
   LambdaCodeBucket:
     Type: AWS::S3::Bucket
